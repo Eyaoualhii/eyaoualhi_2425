@@ -7,17 +7,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@TestMethodOrder(MethodOrderer.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @SpringBootTest
 public class BlocServiceTest {
 
     @BeforeAll
-    void bedore() {
+    static void before() {
 
     }
 
     @AfterAll
-    void after() {
+    static void after() {
 
     }
 
