@@ -110,7 +110,7 @@ public class ChambreService implements IChambreService {
         return listChambreDispo;
     }
 
-    @Scheduled(cron = "0 * * * * *")
+    //@Scheduled(cron = "0 * * * * *")
     public void listeChambresParBloc() {
         for (Bloc b : blocRepository.findAll()) {
             log.info("Bloc => " + b.getNomBloc() +
