@@ -16,6 +16,19 @@
     <properties>
         <java.version>17</java.version>
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Eya Releases</name>
+            <url>http://localhost:8082/repository/eya-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
