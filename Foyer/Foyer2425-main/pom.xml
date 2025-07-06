@@ -18,17 +18,23 @@
     </properties>
     <distributionManagement>
         <repository>
-            <id>nexus</id>
+            <id>nexus-releases</id>
             <name>Eya Releases</name>
             <url>http://localhost:8082/repository/eya-releases/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Eya Snapshots</name>
+            <url>http://localhost:8082/repository/eya-snapshots/</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </repository>
+        </snapshotRepository>
     </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
