@@ -18,7 +18,7 @@
     </properties>
     <distributionManagement>
         <repository>
-            <id>nexus-releases</id>
+            <id>eya-releases</id>
             <name>Eya Releases</name>
             <url>http://localhost:8082/repository/eya-releases/</url>
             <releases>
@@ -26,7 +26,7 @@
             </releases>
         </repository>
         <snapshotRepository>
-            <id>nexus-snapshots</id>
+            <id>eya-snapshots</id>
             <name>Eya Snapshots</name>
             <url>http://localhost:8082/repository/eya-snapshots/</url>
             <snapshots>
