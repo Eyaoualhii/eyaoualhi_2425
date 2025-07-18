@@ -2,6 +2,6 @@ global:
   scrape_interval: 15s
 scrape_configs:
   - job_name: 'foyer-app'
-    metric_path: '/actuator/promotheus'
+    metric_path: '/actuator/prometheus'
     static_configs:
       - targets: ['foyer-app:8086']
