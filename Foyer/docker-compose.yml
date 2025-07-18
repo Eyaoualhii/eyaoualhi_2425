@@ -5,9 +5,9 @@ services:
     container_name: foyer-app
     ports:
       - "8086:8086"
-    environment:
-        - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka:8761/eureka/
-        - OTEL_EXPORTER_OTLP_ENDPOINT=http://jaeger:4317
+#    environment:
+#        - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka:8761/eureka/
+#        - OTEL_EXPORTER_OTLP_ENDPOINT=http://jaeger:4317
     restart: always
 
   grafana:
@@ -34,20 +34,20 @@ services:
     depends_on:
       - foyer-app
 
-  eureka:
-    image: oualhieya02/eureka-server:latest
-    container_name: eureka
-    ports:
-      - "8761:8761"
-    restart: always
-
-  jaeger:
-    image: jaegertracing/all-in-one:1.57
-    container_name: jaeger
-    ports:
-      - "16686:16686"
-      - "4317:4317"
-    restart: always
+#  eureka:
+#    image: oualhieya02/eureka-server:latest
+#    container_name: eureka
+#    ports:
+#      - "8761:8761"
+#    restart: always
+#
+#  jaeger:
+#    image: jaegertracing/all-in-one:1.57
+#    container_name: jaeger
+#    ports:
+#      - "16686:16686"
+#      - "4317:4317"
+#    restart: always
 
 
 
