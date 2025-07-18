@@ -29,3 +29,9 @@ services:
       - '--config.file=/etc/prometheus/prometheus.yml'
     depends_on:
       - foyer-app
+  eureka:
+    image: oualhieya02/eureka-server:latest
+    container_name: eureka
+    ports:
+      - "8761:8761"
+    restart: always
